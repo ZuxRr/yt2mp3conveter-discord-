@@ -32,6 +32,7 @@ Create a new folder on your computer where you want to store your bot's files.
 In the folder, create a new file named bot.js (or any name you prefer).
 Add the following code to your file:
 
+------------------------------------------------------------------------------------------------------------------------------------------
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
@@ -47,6 +48,9 @@ client.on('messageCreate', (message) => {
         message.reply('Hello!');
     }
 });
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
 Step 7: Run the Bot
 Open your terminal or command prompt.
 
